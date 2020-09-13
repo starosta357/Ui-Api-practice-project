@@ -1,7 +1,9 @@
 package ui;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import ui.driver.DriverSingleton;
 import ui.util.TestListener;
 

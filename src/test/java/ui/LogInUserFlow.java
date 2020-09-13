@@ -10,7 +10,7 @@ import ui.util.UserCreator;
 public class LogInUserFlow extends BaseTestCaseUi {
 
     @Test
-    public void checkLogInForPredefinedUser(){
+    public void checkLogInForPredefinedUser() {
         User user = UserCreator.withCredentialsFromProperty();
 
         String actualUrl = new MainPage(driver)
@@ -22,7 +22,5 @@ public class LogInUserFlow extends BaseTestCaseUi {
         Assert.assertEquals(actualUrl, MyAccountPage.BASE_URL,
                 "After log in " + MyAccountPage.BASE_URL + " must be open");
     }
-
-
 
 }

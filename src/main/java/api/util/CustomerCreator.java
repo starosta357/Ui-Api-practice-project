@@ -7,16 +7,16 @@ public class CustomerCreator {
     public static final String CUSTOMER_NAME = "api.customer.name";
     public static final String CUSTOMER_JOB = "api.customer.job";
 
-    public static Customer withCredentialsFromProperty(){
+    public static Customer withCredentialsFromProperty() {
         return new Customer(TestDataReader.getTestData(CUSTOMER_NAME),
                 TestDataReader.getTestData(CUSTOMER_JOB));
     }
 
-    public static Customer withEmptyCustomerName(){
+    public static Customer withEmptyCustomerName() {
         return new Customer("", TestDataReader.getTestData(CUSTOMER_JOB));
     }
 
-    public static Customer withEmptyCustomerJob(){
+    public static Customer withEmptyCustomerJob() {
         return new Customer(TestDataReader.getTestData(CUSTOMER_NAME), "");
     }
 }

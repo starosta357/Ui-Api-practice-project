@@ -9,7 +9,7 @@ import ui.util.UserCreator;
 public class LogOutUserFlow extends BaseTestCaseUi {
 
     @Test
-    public void checkLogOutForPredefinedUser(){
+    public void checkLogOutForPredefinedUser() {
         User user = UserCreator.withCredentialsFromProperty();
 
         boolean isUserSingOut = new MainPage(driver)

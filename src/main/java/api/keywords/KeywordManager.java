@@ -9,14 +9,14 @@ public class KeywordManager {
     private KeywordManager() {
     }
 
-    public static KeywordManager getInstance(){
+    public static KeywordManager getInstance() {
         if (instance == null)
             instance = new KeywordManager();
 
         return instance;
     }
 
-    public CustomerKeywords customer(){
+    public CustomerKeywords customer() {
         return customerKeywords;
     }
 
